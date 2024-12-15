@@ -1,0 +1,141 @@
+amount,installment_rate,present_residence,age,number_of_credits,people_liable,credit_history,purpose,personal_status,property,job,housing,telephone,foreign_worker,checking_account_status,savings_account_status,employment_years,duration,full_repaid
+7685,2,4,37,1,1,all_credit_paid,business,F_not_single,other,official,rent,0,1,-1,1,5,48,False
+2278,3,3,28,2,1,no_credit_taken,car_new,F_not_single,other,official,own,0,1,2,3,1,18,False
+741,4,3,22,1,1,existing_credit_paid,domestic_appliances,F_not_single,life_insurance  ,official,own,0,1,-1,3,0,12,False
+1355,3,4,25,1,1,existing_credit_paid,car_new,F_not_single,other,unskilled,own,1,1,2,1,1,24,False
+339,4,1,45,1,1,all_credit_paid,retraining,M_divorced,other,unskilled,own,0,1,-1,1,7,12,True
+3384,1,4,44,1,1,critical_account,furniture_equipment,M_divorced,real_estate ,management,rent,1,1,-1,1,3,6,False
+3422,4,4,47,3,2,existing_credit_paid,furniture_equipment,M_single,life_insurance  ,official,own,1,1,0,1,7,18,True
+7485,4,1,53,1,1,all_credit_paid,car_used,F_not_single,real_estate ,management,own,1,1,0,0,0,30,False
+8072,2,3,25,3,1,no_credit_taken,business,M_single,other,official,own,0,1,-1,0,1,30,True
+937,4,3,27,2,1,existing_credit_paid,retraining,M_divorced,other,unskilled,own,0,1,0,1,1,24,True
+9271,2,1,24,1,1,existing_credit_paid,car_new,M_single,other,official,own,1,1,-1,1,5,36,False
+3527,2,3,45,1,2,existing_credit_paid,car_new,M_single,life_insurance  ,management,own,1,1,0,0,1,12,True
+2181,4,4,36,2,1,critical_account,car_new,M_single,real_estate ,official,own,0,1,2,0,7,30,True
+4454,4,4,34,2,1,delay_in_paying,radio_TV,F_not_single,real_estate ,official,own,0,1,0,1,3,36,True
+3857,4,4,40,1,1,existing_credit_paid,car_used,M_divorced,life_insurance  ,management,own,1,1,-1,1,3,30,True
+1386,2,2,26,1,1,existing_credit_paid,car_new,F_not_single,life_insurance  ,official,own,0,1,0,5,3,12,False
+18424,1,2,32,1,1,no_credit_taken,others,F_not_single,life_insurance  ,management,own,1,0,2,1,3,48,False
+1898,1,2,34,2,2,critical_account,radio_TV,M_single,real_estate ,unskilled,own,0,1,0,0,3,6,True
+1409,4,3,54,1,1,critical_account,car_used,M_single,real_estate ,official,own,0,1,-1,1,7,12,True
+6761,2,4,68,2,1,existing_credit_paid,car_new,M_single,other,official,rent,0,1,0,0,3,18,False
+5848,4,1,24,1,1,existing_credit_paid,radio_TV,M_single,other,official,own,0,1,5,1,3,36,True
+1287,4,4,37,2,1,critical_account,car_new,F_not_single,real_estate ,official,own,1,1,0,7,7,24,True
+4210,4,2,26,1,1,existing_credit_paid,radio_TV,M_single,other,official,own,0,1,5,1,3,36,False
+1258,4,1,25,1,1,existing_credit_paid,business,M_single,real_estate ,official,own,1,1,0,1,5,24,True
+9283,1,2,55,1,1,all_credit_paid,car_used,M_single,no_property,management,free,1,1,2,1,0,42,True
+3573,1,1,23,1,1,critical_account,radio_TV,F_not_single,real_estate ,unskilled,own,0,1,2,1,3,12,True
+3812,1,4,23,1,1,existing_credit_paid,car_used,F_not_single,other,official,own,1,1,0,3,1,15,True
+9398,1,4,28,1,1,existing_credit_paid,car_used,M_divorced,other,management,rent,1,1,2,1,1,36,False
+1965,4,4,42,2,1,delay_in_paying,car_new,F_not_single,other,official,rent,1,1,2,0,3,24,True
+5743,2,4,24,2,1,critical_account,education,F_not_single,no_property,official,free,1,1,2,1,1,24,True
+3905,2,2,36,2,2,critical_account,car_new,M_single,real_estate ,official,rent,0,1,-1,1,3,11,True
+3913,2,2,23,1,1,existing_credit_paid,radio_TV,M_single,real_estate ,official,own,1,1,5,1,3,36,True
+1647,4,2,40,2,2,all_credit_paid,car_new,M_single,life_insurance  ,unskilled,own,0,1,-1,0,3,21,False
+6850,1,2,34,1,2,all_credit_paid,car_new,M_single,life_insurance  ,management,own,1,1,2,3,0,15,False
+1318,4,4,54,1,1,existing_credit_paid,car_new,M_single,real_estate ,official,own,1,1,2,7,7,12,True
+1224,3,1,30,2,1,critical_account,car_new,M_single,real_estate ,official,own,0,1,0,1,3,9,True
+3275,1,4,36,1,1,critical_account,car_used,M_single,other,management,own,1,1,0,1,7,21,True
+2320,2,3,34,2,1,delay_in_paying,radio_TV,M_divorced,real_estate ,official,own,0,1,0,1,0,18,True
+2603,2,4,28,1,1,existing_credit_paid,car_used,F_not_single,other,official,rent,1,1,0,7,3,24,True
+727,4,4,46,1,1,existing_credit_paid,education,M_single,no_property,official,free,1,1,0,5,7,10,True
+12749,4,1,37,1,1,delay_in_paying,radio_TV,M_single,other,management,own,1,1,0,5,5,48,True
+709,2,2,27,1,1,existing_credit_paid,car_new,M_divorced,real_estate ,unemployed,own,0,0,5,7,1,6,True
+4526,4,2,32,2,2,critical_account,furniture_equipment,M_single,real_estate ,unskilled,own,1,1,0,7,1,27,True
+1403,2,4,28,1,1,existing_credit_paid,car_new,F_not_single,other,official,rent,0,1,-1,1,3,15,True
+1322,4,4,40,2,1,critical_account,car_new,F_not_single,other,official,own,0,1,2,7,3,11,True
+1316,2,2,47,2,1,critical_account,radio_TV,M_divorced,life_insurance  ,unskilled,own,0,1,0,5,3,15,True
+4594,3,2,32,1,1,existing_credit_paid,radio_TV,M_single,other,official,own,1,1,0,1,1,18,True
+2210,2,2,25,1,1,existing_credit_paid,furniture_equipment,M_single,real_estate ,unskilled,rent,0,1,0,1,3,10,False
+1037,3,4,39,1,1,existing_credit_paid,business,M_single,real_estate ,unskilled,own,0,1,2,3,5,12,True
+6314,4,2,27,2,1,critical_account,others,M_single,no_property,management,own,1,1,0,1,0,24,True
+3568,4,2,54,1,1,existing_credit_paid,radio_TV,F_not_single,other,management,rent,1,1,0,1,7,15,True
+1360,4,2,31,2,1,critical_account,radio_TV,M_single,life_insurance  ,official,own,0,1,0,1,3,15,True
+250,2,2,41,2,1,critical_account,car_new,F_not_single,real_estate ,unskilled,own,0,1,0,7,3,6,True
+1358,4,3,40,1,1,all_credit_paid,others,M_single,other,management,own,1,1,-1,0,7,24,False
+11054,4,2,30,1,1,critical_account,car_used,M_single,other,management,own,1,1,0,0,3,36,True
+2329,1,1,45,1,1,existing_credit_paid,radio_TV,F_not_single,real_estate ,official,own,0,1,2,1,1,7,True
+1995,4,1,27,1,1,critical_account,car_new,M_single,other,official,own,0,1,2,3,1,12,True
+2101,2,4,23,1,1,existing_credit_paid,radio_TV,F_not_single,life_insurance  ,unskilled,own,0,1,2,1,1,13,True
+3001,2,4,40,1,1,existing_credit_paid,furniture_equipment,F_not_single,real_estate ,official,rent,0,1,2,1,5,18,True
+2872,3,4,36,1,2,critical_account,radio_TV,M_single,real_estate ,official,own,1,1,0,3,7,24,True
+5511,4,1,25,1,1,existing_credit_paid,furniture_equipment,M_single,other,official,own,0,1,0,3,3,24,True
+1042,4,2,33,1,1,existing_credit_paid,car_new,F_not_single,life_insurance  ,official,own,0,1,2,0,3,18,False
+4657,3,2,30,1,1,existing_credit_paid,car_used,M_single,other,official,own,1,1,0,1,3,15,True
+5954,2,1,41,2,1,critical_account,business,F_not_single,real_estate ,unskilled,own,0,1,2,1,5,42,True
+685,2,3,25,1,1,existing_credit_paid,car_new,M_divorced,other,unskilled,own,0,1,2,1,5,12,False
+1352,1,2,23,1,1,existing_credit_paid,car_used,F_not_single,life_insurance  ,unemployed,rent,1,1,-1,5,0,6,True
+7763,4,4,42,1,1,existing_credit_paid,car_new,M_single,no_property,management,free,0,1,-1,1,7,48,False
+6887,4,3,29,1,1,delay_in_paying,education,M_single,life_insurance  ,official,own,1,1,-1,1,3,36,False
+1567,1,1,22,1,1,existing_credit_paid,radio_TV,F_not_single,other,official,own,1,1,2,1,3,12,True
+2238,2,1,25,2,1,critical_account,radio_TV,F_not_single,other,official,own,0,1,0,1,3,18,True
+2473,4,1,25,1,1,existing_credit_paid,furniture_equipment,M_single,other,unemployed,own,0,1,-1,1,0,18,False
+3622,4,4,57,2,1,existing_credit_paid,furniture_equipment,F_not_single,life_insurance  ,official,rent,1,1,-1,7,7,30,True
+902,4,4,21,1,1,existing_credit_paid,retraining,M_divorced,life_insurance  ,official,rent,0,1,-1,1,5,12,False
+3566,4,2,30,1,1,all_credit_paid,business,M_single,other,official,own,0,1,2,3,5,48,True
+947,4,3,38,1,2,existing_credit_paid,car_new,M_single,no_property,official,free,0,1,5,1,5,24,False
+6458,2,4,39,2,2,all_credit_paid,car_new,M_single,no_property,management,own,1,1,0,1,7,18,False
+950,4,3,33,2,2,no_credit_taken,car_new,M_single,other,official,rent,0,1,-1,1,7,15,False
+1331,2,1,22,1,1,existing_credit_paid,radio_TV,M_single,other,official,own,0,1,2,1,1,12,False
+12579,4,2,44,1,1,existing_credit_paid,car_used,F_not_single,no_property,management,free,1,1,2,1,7,24,False
+3804,4,1,42,1,1,no_credit_taken,radio_TV,F_not_single,other,official,own,1,1,2,1,3,36,False
+2892,3,4,51,1,1,existing_credit_paid,furniture_equipment,M_divorced,no_property,official,free,0,1,5,1,7,24,True
+2132,2,3,27,2,1,critical_account,furniture_equipment,F_not_single,real_estate ,official,rent,0,0,-1,0,1,10,True
+6615,2,4,75,2,1,critical_account,car_used,M_single,no_property,management,free,1,1,-1,1,0,24,True
+1924,4,3,27,1,1,existing_credit_paid,furniture_equipment,F_not_single,real_estate ,official,rent,0,1,2,0,1,18,False
+1239,4,4,61,1,1,existing_credit_paid,education,M_single,no_property,official,free,0,1,2,0,3,18,True
+1050,4,1,35,2,1,delay_in_paying,furniture_equipment,M_single,life_insurance  ,management,own,1,1,2,1,0,6,True
+1591,4,3,34,2,1,delay_in_paying,furniture_equipment,M_single,real_estate ,management,own,0,1,0,3,5,21,True
+9572,1,1,28,2,1,delay_in_paying,business,M_divorced,other,official,own,0,1,0,1,1,36,False
+2503,4,2,41,2,1,delay_in_paying,business,M_single,life_insurance  ,official,own,0,1,2,3,7,30,True
+1471,4,4,35,2,1,critical_account,radio_TV,M_single,no_property,official,free,1,1,0,1,3,15,True
+2439,4,4,35,1,1,existing_credit_paid,radio_TV,F_not_single,real_estate ,official,own,1,1,-1,1,1,24,False
+2511,1,4,23,1,1,existing_credit_paid,car_new,F_not_single,other,official,rent,0,1,-1,1,0,15,True
+2406,2,3,31,1,1,critical_account,furniture_equipment,M_single,other,management,own,0,1,0,1,0,9,True
+3850,3,1,27,2,1,critical_account,car_used,M_single,other,official,own,0,1,0,1,5,18,True
+1935,4,4,31,2,1,critical_account,business,M_divorced,real_estate ,official,own,1,1,2,1,7,24,False
+1845,4,1,46,1,1,existing_credit_paid,furniture_equipment,F_not_single,life_insurance  ,official,rent,0,1,-1,1,1,15,True
+1905,4,4,40,1,1,existing_credit_paid,education,M_single,other,management,rent,1,1,5,1,7,15,True
+701,4,2,40,1,1,existing_credit_paid,radio_TV,M_divorced,real_estate ,unskilled,own,0,1,-1,1,3,12,True
+976,1,2,23,1,1,existing_credit_paid,car_new,F_not_single,other,unskilled,own,0,1,-1,1,1,18,False
+2445,2,4,26,1,1,existing_credit_paid,car_used,M_divorced,other,official,rent,1,1,0,0,1,12,True
+1941,4,2,35,1,1,existing_credit_paid,business,M_single,life_insurance  ,unskilled,own,1,1,2,7,3,18,True
+1820,2,2,30,1,1,existing_credit_paid,car_new,M_divorced,life_insurance  ,management,own,1,1,0,1,3,18,True
+1936,2,4,23,2,1,existing_credit_paid,radio_TV,M_divorced,other,unskilled,rent,0,1,-1,0,5,18,True
+763,4,1,26,1,1,existing_credit_paid,furniture_equipment,F_not_single,real_estate ,official,own,1,1,0,1,3,12,True
+2415,3,2,34,1,1,existing_credit_paid,radio_TV,M_single,real_estate ,official,own,0,1,2,1,3,7,True
+1670,4,2,22,1,1,existing_credit_paid,radio_TV,F_not_single,other,official,own,1,1,2,1,1,9,False
+6842,2,4,46,2,2,critical_account,car_used,M_single,life_insurance  ,management,own,1,1,0,0,3,24,True
+1203,3,2,43,1,1,existing_credit_paid,car_new,M_single,life_insurance  ,official,own,1,1,-1,3,7,6,True
+1299,1,1,74,3,2,critical_account,car_new,M_single,real_estate ,unemployed,own,0,0,5,1,3,6,True
+1503,4,4,41,1,1,delay_in_paying,car_used,M_divorced,real_estate ,official,rent,0,1,0,1,3,12,True
+1136,4,3,32,2,2,critical_account,education,M_single,no_property,official,free,0,1,2,7,7,9,False
+1300,4,4,45,1,2,existing_credit_paid,car_used,M_single,no_property,official,free,0,1,0,0,7,15,True
+4110,3,4,23,2,2,no_credit_taken,furniture_equipment,M_single,no_property,official,rent,0,1,-1,1,7,24,False
+7238,3,3,32,2,2,delay_in_paying,radio_TV,M_single,other,official,own,0,1,0,0,7,48,True
+2337,4,4,36,1,1,critical_account,radio_TV,M_single,real_estate ,official,own,0,1,2,1,7,36,True
+2483,4,4,22,1,1,all_credit_paid,furniture_equipment,M_single,real_estate ,official,own,1,1,-1,5,3,24,True
+5302,2,4,36,3,1,critical_account,car_new,M_single,no_property,management,free,1,1,-1,1,7,18,True
+362,4,4,52,2,1,critical_account,car_new,F_not_single,other,unskilled,own,0,1,0,3,3,6,True
+2028,2,2,30,2,1,critical_account,furniture_equipment,M_single,life_insurance  ,unskilled,own,0,1,0,1,5,24,True
+1388,4,2,26,1,1,existing_credit_paid,furniture_equipment,F_not_single,real_estate ,official,rent,0,1,0,1,3,9,True
+3931,4,4,46,1,2,existing_credit_paid,car_new,M_single,no_property,official,free,0,1,-1,1,5,48,False
+1216,4,4,38,2,2,critical_account,radio_TV,M_single,no_property,official,own,0,1,2,3,1,24,False
+3656,4,4,49,2,1,critical_account,radio_TV,M_single,life_insurance  ,unskilled,own,0,1,5,0,7,30,True
+2662,4,3,32,1,1,existing_credit_paid,car_new,M_single,life_insurance  ,official,own,0,0,0,0,5,18,True
+1795,3,4,48,2,1,critical_account,radio_TV,F_not_single,real_estate ,unskilled,rent,1,1,2,1,7,18,True
+3123,4,1,27,1,1,existing_credit_paid,car_new,F_not_single,life_insurance  ,official,own,0,1,-1,1,1,24,False
+1459,4,2,43,1,1,critical_account,radio_TV,F_not_single,other,unskilled,own,0,1,0,1,3,15,True
+1445,4,4,49,1,1,all_credit_paid,radio_TV,M_single,other,unskilled,own,0,1,5,0,5,18,True
+1199,4,4,60,2,1,critical_account,car_new,M_single,other,unskilled,own,0,1,-1,1,7,24,False
+2899,4,4,43,1,2,delay_in_paying,car_new,M_single,other,official,own,0,1,2,0,7,18,True
+5965,1,2,30,2,1,delay_in_paying,car_used,M_single,other,management,own,1,1,2,1,7,27,True
+1808,4,1,22,1,1,delay_in_paying,furniture_equipment,F_not_single,real_estate ,official,own,0,1,0,1,5,18,False
+672,1,4,54,1,1,existing_credit_paid,car_new,F_not_single,real_estate ,unemployed,own,1,1,0,1,0,6,True
+4796,4,4,56,1,1,critical_account,car_used,M_single,no_property,official,free,0,1,5,1,7,42,True
+1249,4,2,28,1,1,existing_credit_paid,car_new,M_divorced,real_estate ,official,own,0,1,0,1,1,24,True
+3509,4,1,25,1,1,existing_credit_paid,radio_TV,F_not_single,real_estate ,official,own,0,1,-1,1,5,18,True
+8229,2,2,26,1,2,existing_credit_paid,car_used,M_single,life_insurance  ,official,own,0,1,-1,1,3,36,False
+5842,2,2,35,2,2,critical_account,car_used,M_single,life_insurance  ,official,own,1,1,0,1,7,36,True
+3430,3,2,31,1,2,existing_credit_paid,radio_TV,M_single,other,official,own,1,1,0,5,7,24,True
+1361,2,4,40,1,2,critical_account,car_new,M_single,real_estate ,unskilled,own,0,0,-1,1,1,6,True
