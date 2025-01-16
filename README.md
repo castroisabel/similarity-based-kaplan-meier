@@ -11,12 +11,11 @@ Consider a data set with observations in the form $(t_j, \delta_j, \textbf{x}_j)
 For a given covariate vector $\textbf{x} = (x^1,...,x^m)^\intercal$, our aim is to estimate the conditional survival function $S(t|\textbf{x}) = P(T > t|\textbf{x})$. 
 At this point, we propose using the similarity-based Kaplan-Meier (SBKM) estimator to estimate the conditional survival function. This estimator is defined as follows:
 
-$$
+```math
 \widehat{S}(t|\textbf{x}) = \prod_{i=1}^{n'}
 \left[1-\frac{\sum_{j=1}^{n} s_w(\textbf{x},\textbf{x}_j) \delta_j \mathbf{1}\{t_j=t_{(i)}\}}
 {\sum_{j=1}^{n} s_w(\textbf{x},\textbf{x}_j) \mathbf{1}\{t_j \geq t_{(i)}\}}\right]^{\mathbf{1}\{t_{(i)} \leq t\}}.
-$$
-
+```
 
 It is important to note that in the special case where $s_w(\textbf{x},\textbf{x}_j) = 1$ for all $j$, we revert to the classical KM estimator, which estimates the survival curve without considering covariates.
 
@@ -31,7 +30,7 @@ To run this project, you need:
 
 Follow these steps to set up your environment and install the required dependencies:
 
-```
+```bash
 python 3 -m venv .env
 source .env/bin/activate
 pip freeze install -r requirements.txt
