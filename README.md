@@ -24,7 +24,7 @@ It is important to note that in the special case where $s_w(\textbf{x},\textbf{x
 To run this project, you need:
 
 - **Python 3.10.12:** Ensure this version of Python is installed on your system.
-- **Additional Libraries:** Dependencies are listed in the requirements.txt file.
+- **Additional Libraries:** Dependencies are listed in the `requirements.txt` file.
 
 ## Setting Up the Environment
 
@@ -36,4 +36,38 @@ source .env/bin/activate
 pip freeze install -r requirements.txt
 ```
 
-## Data Set
+## Dataset: German Credit (CREDIT)
+
+The German Credit dataset, originally provided by Professor Dr. Hans Hofmann from the University of Hamburg, is available in the [UCI Machine Learning Repository](https://doi.org/10.24432/C5NC77). This dataset contains personal and sociodemographic information of various borrowers, including the loan duration in months and the repayment status. 
+
+| **Dataset** | **Sample size** | **Number of covariates** | **Censoring rate** |
+|--------------|-----------------|--------------------------|--------------------|
+| CREDIT       | 1000            | 17                       | 30.0%             |
+
+Details of the dataset features are outlined in the table below.
+
+| **Variable**              | **Type**       | **Description**                                                                 |
+|----------------------------|----------------|---------------------------------------------------------------------------------|
+| `duration`                | Numeric        | Duration in months                                                             |
+| `full_repaid`             | Categorical    | Specifies whether the loan was fully repaid                                    |
+| `age`                     | Numeric        | Borrower's age (in years)                                                      |
+| `foreign_worker`          | Categorical    | Indicates whether the borrower is a foreign worker                             |
+| `personal_status`         | Categorical    | Gender and marital status                                                      |
+| `people_liable`           | Numeric        | Number of dependents                                                           |
+| `telephone`               | Categorical    | Indicates whether the borrower has a telephone                                 |
+| `employment_years`        | Categorical    | Years (in intervals) at the current job                                        |
+| `job`                     | Categorical    | Employment status                                                              |
+| `housing`                 | Categorical    | Borrower's housing situation                                                   |
+| `present_residence`       | Numeric        | Years at the current residence                                                 |
+| `amount`                  | Numeric        | Loan amount                                                                    |
+| `installment_rate`        | Numeric        | Percentage of the loan amount charged by the lender to the borrower            |
+| `purpose`                 | Categorical    | Reason for obtaining a loan                                                    |
+| `checking_account_status` | Categorical    | Status of the checking account                                                 |
+| `credit_history`          | Categorical    | Borrower's credit history                                                      |
+| `number_of_credits`       | Numeric        | Number of existing credits with this bank                                      |
+| `savings_account_status`  | Categorical    | Status of the savings account                                                  |
+| `property`                | Categorical    | Type of valuable assets owned by the borrower                                  |
+
+The data was preprocessed (see `notebooks/split_data.ipynb`) to remove columns with NaN values and convert ordinal categorical features into numerical rankings. The dataset was randomly split into $`70\%`$ for training and $`30\%`$ for testing, with $`20\%`$ of the training data used for validation.
+
+The raw data is in the `data/raw` folder, and the processed data, split into training, validation, and test sets, is in the `data/processed` folder.
