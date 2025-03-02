@@ -77,3 +77,25 @@ The raw data is in the `data/raw` folder, and the processed data, split into tra
 Predictive models in survival analysis typically map the set of covariates $`\textbf{x}_i`$ to a risk score associated with a given individual experiencing the event $\eta_i \in \mathbb{R}$, as well as to their survival function $`S(t|\textbf{x}_i)`$. Specifically, we treat these risk scores as measures of the probability of an event occurring for a given individual.
 
 ### Concordance Index
+The most commonly used evaluation metric for survival models is the concordance index (CI), also known as the *C-index*. The CI is defined as the proportion of all comparable pairs in which predictions and outcomes are concordant. Two samples $i$ and $j$ are comparable if the one with the shorter observed time experienced the event, i.e., $t_j>t_i$​ and $δ_i=1$, where $δ_i$​ is a binary event indicator. Assuming higher $\eta$ values imply shorter survival times, a pair is concordant if $\eta_i>\eta_j$​ and $t_i<t_j$​; otherwise, it is discordant.
+
+Thus, the *C-index* can be expressed as the following probability, conditioned on the relative event order.
+```math
+CI = P(\eta_i > \eta_j | t_i < t_j)
+```
+
+For a perfectly discriminative model, selecting two random comparable subjects $(\eta_i,t_i)$ and $(\eta_j​,t_j​)$, the one with the higher $\eta$ will always have a shorter survival time. Therefore, the concordance index quantifies a model’s discriminative ability, indicating how reliably it ranks individuals by survival time.
+
+This probability can be computed using the following formula:
+
+```math
+\widehat{CI} = \frac{\sum_{i,j} \mathbf{1}\{t_i <  t_j\} \mathbf{1}\{\eta_i > \eta_j\} \delta_i}{\sum_{i,j} \mathbf{1}\{t_i <  t_j\} \delta_i},
+```
+where:
+- $\eta_i$ is the risk score of individual $i$
+- $\mathbf{1}\{t_i <  t_j\} =  1$ if $t_i <  t_j$ otherwise $0$
+- $\mathbf{1}\{\eta_i > \eta_j\} =  1$ if $\eta_i > \eta_j$ otherwise $0$
+
+Consequently, $\widehat{CI}=1$ indicates the best possible model prediction, while $\widehat{CI}=0.5$ corresponds to random guessing.
+
+### Brier Score
