@@ -96,6 +96,33 @@ where:
 - $\mathbf{1}\{t_i <  t_j\} =  1$ if $t_i <  t_j$ otherwise $0$
 - $\mathbf{1}\{\eta_i > \eta_j\} =  1$ if $\eta_i > \eta_j$ otherwise $0$
 
-Consequently, $\widehat{CI}=1$ indicates the best possible model prediction, while $\widehat{CI}=0.5$ corresponds to random guessing.
+Consequently, $`\widehat{CI}=1`$ indicates the best possible model prediction, while $`\widehat{CI}=0.5`$ corresponds to random guessing.
 
 ### Brier Score
+Given a dataset with $n$ samples, each sample is represented as $(t_i, \delta_i, \textbf{x}_i)$ where the predicted survival function is $\widehat{S}(t|\textbf{x}_i)$.In the absence of censoring, the Brier Score (BS) is computed as:
+
+```math
+    BS(t) = \frac{1}{n}  \sum_{i=1}^n  \left( \mathbf{1}\{t_i >  t\} - \widehat{S}(t|\textbf{x}_i) \right)^2.
+```
+
+For right-censored data, inverse probability of censoring weighting (IPCW) is applied. The Kaplan-Meier estimate of the survival function for censoring times, $\widehat{G}(t)$, is given by:
+
+```math
+    \widehat{G}(t) = \prod_{i=1}^{n} \left(1-\frac{e_i}{g_i}\right)^{(1-\delta_i)\mathbf{1}\{t_i\leq  t\}},
+```
+
+where $e_i$​ is the number of censored cases at $t_i$​, and gigi​ is the number of individuals at risk at titi​. Using IPCW, the censored Brier Score is computed as:
+
+```math
+    BS(t) = \frac{1}{n} \sum_{i=1}^n \left( \frac{\left(0 - \widehat{S}(t|\textbf{x}_i)\right)^2 \mathbf{1}\{t_i \leq  t\} \delta_i}{\widehat{G}(t_i)} + \frac{\left(1 - \widehat{S}(t|\textbf{x}_i)\right)^2 \mathbf{1}\{t_i >  t\} }{\widehat{G}(t)} \right)
+```
+
+To assess the overall predictive performance, the Integrated Brier Score (\gls{IBS}) is computed as:
+
+```math
+    IBS = \int_{t_1}^{t_{max}} BS(t) d\omega(t), 
+```
+
+where $\omega(t) = t/t_{max}$​ is the weighting function. A lower score indicates better predictive accuracy.
+
+The BS is often used to assess calibration since, if a model predicts a $`10\%`$ risk of an event occurring at a given time, the observed frequency in the data should match this percentage for a well-calibrated model. Additionally, the BS is also a measure of discrimination, as it evaluates whether a model can predict risk scores that correctly rank the order of events.
