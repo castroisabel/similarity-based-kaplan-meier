@@ -2,7 +2,7 @@
 
 **Author:** Isabel de C. Beneyto 
 
-A generalized version of the Kaplan-Meier estimator called the similarity-based Kaplan-Meier. This repository implements an approach that integrates a similarity measure into the traditional Kaplan-Meier formula, enabling weighted covariate assignment for enhanced survival analysis.
+A generalized version of the Kaplan-Meier (KM) estimator called the similarity-based Kaplan-Meier. This repository implements an approach that integrates a similarity measure into the traditional Kaplan-Meier formula, enabling weighted covariate assignment for enhanced survival analysis.
 
 ## Model 
 
@@ -71,3 +71,9 @@ Details of the dataset features are outlined in the table below.
 The data was preprocessed (see `notebooks/01.split_data.ipynb`) to remove columns with NaN values and convert ordinal categorical features into numerical rankings. The dataset was randomly split into $`70\%`$ for training and $`30\%`$ for testing, with $`20\%`$ of the training data used for validation.
 
 The raw data is in the `data/raw` folder, and the processed data, split into training, validation, and test sets, is in the `data/processed` folder.
+
+## Evaluation Metrics
+
+Predictive models in survival analysis typically map the set of covariates $`\textbf{x}_i`$ to a risk score associated with a given individual experiencing the event $\eta_i \in \mathbb{R}$, as well as to their survival function $`S(t|\textbf{x}_i)`$. Specifically, we treat these risk scores as measures of the probability of an event occurring for a given individual.
+
+### Concordance Index
