@@ -12,7 +12,7 @@ For a given covariate vector $`\textbf{x} = (x^1,...,x^m)^\intercal`$, our aim i
 At this point, we propose using the similarity-based Kaplan-Meier (SBKM) estimator to estimate the conditional survival function. This estimator is defined as follows:
 
 ```math
-\widehat{S}(t|\textbf{x}) = \prod_{i=1}^{n'}
+\hat{S}(t|\textbf{x}) = \prod_{i=1}^{n'}
 \left[1-\frac{\sum_{j=1}^{n} s_w(\textbf{x},\textbf{x}_j) \delta_j \mathbf{1}\{t_j=t_{(i)}\}}
 {\sum_{j=1}^{n} s_w(\textbf{x},\textbf{x}_j) \mathbf{1}\{t_j \geq t_{(i)}\}}\right]^{\mathbf{1}\{t_{(i)} \leq t\}}.
 ```
@@ -89,32 +89,32 @@ For a perfectly discriminative model, selecting two random comparable subjects $
 This probability can be computed using the following formula:
 
 ```math
-\widehat{CI} = \frac{\sum_{i,j} \mathbf{1}\{t_i <  t_j\} \mathbf{1}\{\eta_i > \eta_j\} \delta_i}{\sum_{i,j} \mathbf{1}\{t_i <  t_j\} \delta_i},
+\hat{CI} = \frac{\sum_{i,j} \mathbf{1}\{t_i <  t_j\} \mathbf{1}\{\eta_i > \eta_j\} \delta_i}{\sum_{i,j} \mathbf{1}\{t_i <  t_j\} \delta_i},
 ```
 where:
 - $\eta_i$ is the risk score of individual $i$
 - $\mathbf{1}\{t_i <  t_j\} =  1$ if $t_i <  t_j$ otherwise $0$
 - $\mathbf{1}\{\eta_i > \eta_j\} =  1$ if $\eta_i > \eta_j$ otherwise $0$
 
-Consequently, $`\widehat{CI}=1`$ indicates the best possible model prediction, while $`\widehat{CI}=0.5`$ corresponds to random guessing.
+Consequently, $\hat{CI}=1$ indicates the best possible model prediction, while $\hat{CI}=0.5$ corresponds to random guessing.
 
 ### Brier Score
-Given a dataset with $n$ samples, each sample is represented as $(t_i, \delta_i, \textbf{x}_i)$ where the predicted survival function is $\widehat{S}(t|\textbf{x}_i)$.In the absence of censoring, the Brier Score (BS) is computed as:
+Given a dataset with $n$ samples, each sample is represented as $(t_i, \delta_i, \textbf{x}_i)$ where the predicted survival function is $\hat{S}(t|\textbf{x}_i)$.In the absence of censoring, the Brier Score (BS) is computed as:
 
 ```math
-    BS(t) = \frac{1}{n}  \sum_{i=1}^n  \left( \mathbf{1}\{t_i >  t\} - \widehat{S}(t|\textbf{x}_i) \right)^2.
+    BS(t) = \frac{1}{n}  \sum_{i=1}^n  \left( \mathbf{1}\{t_i >  t\} - \hat{S}(t|\textbf{x}_i) \right)^2.
 ```
 
-For right-censored data, inverse probability of censoring weighting (IPCW) is applied. The Kaplan-Meier estimate of the survival function for censoring times, $\widehat{G}(t)$, is given by:
+For right-censored data, inverse probability of censoring weighting (IPCW) is applied. The Kaplan-Meier estimate of the survival function for censoring times, $\hat{G}(t)$, is given by:
 
 ```math
-    \widehat{G}(t) = \prod_{i=1}^{n} \left(1-\frac{e_i}{g_i}\right)^{(1-\delta_i)\mathbf{1}\{t_i\leq  t\}},
+    \hat{G}(t) = \prod_{i=1}^{n} \left(1-\frac{e_i}{g_i}\right)^{(1-\delta_i)\mathbf{1}\{t_i\leq  t\}},
 ```
 
 where $e_i$​ is the number of censored cases at $t_i$​, and gigi​ is the number of individuals at risk at titi​. Using IPCW, the censored Brier Score is computed as:
 
 ```math
-    BS(t) = \frac{1}{n} \sum_{i=1}^n \left( \frac{\left(0 - \widehat{S}(t|\textbf{x}_i)\right)^2 \mathbf{1}\{t_i \leq  t\} \delta_i}{\widehat{G}(t_i)} + \frac{\left(1 - \widehat{S}(t|\textbf{x}_i)\right)^2 \mathbf{1}\{t_i >  t\} }{\widehat{G}(t)} \right)
+    BS(t) = \frac{1}{n} \sum_{i=1}^n \left( \frac{\left(0 - \hat{S}(t|\textbf{x}_i)\right)^2 \mathbf{1}\{t_i \leq  t\} \delta_i}{\hat{G}(t_i)} + \frac{\left(1 - \hat{S}(t|\textbf{x}_i)\right)^2 \mathbf{1}\{t_i >  t\} }{\hat{G}(t)} \right)
 ```
 
 To assess the overall predictive performance, the Integrated Brier Score (\gls{IBS}) is computed as:
