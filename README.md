@@ -153,6 +153,25 @@ The following results can be reproduced using the code available in: `notebooks/
 | $1000$ | 0.7782 | 0.7757 | 0.7673 (0.7331, 0.7992) | 0.1083 | 0.1262 | 0.1279 (0.1104, 0.1501) | 763.5755 | 236.4244 | 6.0527 (5.5286, 6.5274) |
 
 ### Estimated Failure Time
+The objective was to evaluate the best choice for estimating failure time: the mean $t_m$ or the median $t_{0.5} $ of the survival curve.
+
+The following results can be reproduced using the code available in: `notebooks/.ipynb`.
+
+- **MEAN**
+
+| Similarity Function   | Train CI   | Validation CI   | Test CI   | Train BS   | Validation BS   | Test BS   | $w_1$   | $w_2$   | $\sigma (t_m)$  |
+|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
+| **EX** | 0.7700 | 0.7774 | 0.7718 (0.7375, 0.8054) | 0.1109 | 0.1212 | 0.1246 (0.1066, 0.1461) | 75.646 | 24.353 | 7.6000 (6.6869, 8.4747) |
+| **FR** | 0.7670 | 0.7781 | 0.7734 (0.7405, 0.8055) | 0.1358 | 0.1423 | 0.1447 (0.1239, 0.1701) | 65.085 | 34.914 | 3.4317 (3.0623, 3.7347) |
+
+
+- **MEDIAN**
+
+| Similarity Function   | Train CI   | Validation CI   | Test CI   | Train BS   | Validation BS   | Test BS   | $w_1$   | $w_2$   | $\sigma (t_{0.5})$  |
+|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
+| **EX** | 0.7707 | 0.7826 | 0.7633 (0.7268, 0.7973) | 0.1109 | 0.1212 | 0.1246 (0.1066, 0.1461) | 75.646 | 24.353 | 8.1284 (7.0149, 9.3316) |
+| **FR** | 0.7651 | 0.7822 | 0.7612 (0.7249, 0.7951) | 0.1358 | 0.1423 | 0.1447 (0.1239, 0.1701) | 65.085 | 34.914 | 3.4850 (3.1502, 3.8220) |
+
 
 ### Distance Metric
 
