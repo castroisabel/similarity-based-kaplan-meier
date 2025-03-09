@@ -126,3 +126,38 @@ To assess the overall predictive performance, the Integrated Brier Score (\gls{I
 where $\omega(t) = t/t_{max}$​ is the weighting function. A lower score indicates better predictive accuracy.
 
 The BS is often used to assess calibration since, if a model predicts a $`10\%`$ risk of an event occurring at a given time, the observed frequency in the data should match this percentage for a well-calibrated model. Additionally, the BS is also a measure of discrimination, as it evaluates whether a model can predict risk scores that correctly rank the order of events.
+
+## Results
+
+### Weight Normalization
+In this section, we aimed to select the optimal normalization constraint for our weights: $\sum_i w_i = ?$
+
+The following results can be reproduced using the code available in: `notebooks/.ipynb`.
+
+- Similarity Function: **EX**
+
+| $\sum_i w_i$   | Train CI   | Validation CI   | Test CI   | Train IBS   | Validation IBS   | Test IBS   | $w_1$   | $w_2$   | $\sigma (t_m)$   |
+|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
+| $1$ | 0.7692 | 0.7862 | 0.7786 (0.7438, 0.8101) | 0.1708 | 0.1782 | 0.1763 (0.1508, 0.2058) | 0.2829 | 0.7170 | 0.1603 (0.1381, 0.1827) |
+| $10$ | 0.7629 | 0.7831 | 0.7645 (0.7309, 0.7982) | 0.1438 | 0.1501 | 0.1547 (0.1317, 0.1829) | 6.0134 | 3.9865 | 2.7179 (2.1499, 3.3171) |
+| $100$ | 0.7700 | 0.7774 | 0.7718 (0.7375, 0.8054) | 0.1109 | 0.1212 | 0.1246 (0.1066, 0.1461) | 75.6461 | 24.3538 | 7.6000 (6.6869, 8.4747) |
+| $1000$ | 0.7804 | 0.7630 | 0.7519 (0.7140, 0.7848) | 0.0914 | 0.1282 | 0.1276 (0.1099, 0.1517) | 953.8286 | 46.1713 | 9.4276 (8.3030, 10.3254) |
+
+- Similarity Function: **FR**
+
+| $\sum_i w_i$  | Train CI   | Validation CI   | Test CI   | Train IBS   | Validation IBS   | Test IBS   | $w_1$   | $w_2$   | $\sigma (t_m)$  |
+|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
+| $1$ | 0.7692 | 0.7818 | 0.7708 (0.7318, 0.8034) | 0.1707 | 0.1781 | 0.1761 (0.1507, 0.2057) | 0.3760 | 0.6239 | 0.1708 (0.1470, 0.1943) |
+| $10$ | 0.7666 | 0.7821 | 0.7732 (0.7398, 0.8068) | 0.1585 | 0.1650 | 0.1653 (0.1410, 0.1936) | 5.6410 | 4.3589 | 1.1963 (1.0405, 1.3408) |
+| $100$ | 0.7670 | 0.7781 | 0.7734 (0.7405, 0.8055) | 0.1358 | 0.1423 | 0.1447 (0.1239, 0.1701) | 65.0853 | 34.9146 | 3.4317 (3.0623, 3.7347) |
+| $1000$ | 0.7782 | 0.7757 | 0.7673 (0.7331, 0.7992) | 0.1083 | 0.1262 | 0.1279 (0.1104, 0.1501) | 763.5755 | 236.4244 | 6.0527 (5.5286, 6.5274) |
+
+### Estimated Failure Time
+
+### Distance Metric
+
+### Invariance of Estimated Weights
+
+### Sampling
+
+### Censoring Rate
